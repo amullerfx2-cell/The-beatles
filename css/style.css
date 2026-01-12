@@ -1,0 +1,61 @@
+
+
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background: url("../img/bg_soft.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.wrapper{
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 20px 22px;
+  background: rgba(255,255,255,0.88);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.nav{
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 12px 8px;
+  background: rgba(255,255,255,0.92);
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+}
+
+
+/* === Учебные требования ===
+   1) Главная страница: фон-фото (см. body.home)
+   2) Остальные страницы: спокойный фон (см. body по умолчанию)
+   3) Изменены шрифты заголовков (h1, h2, h3)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;600&display=swap');
+
+body{
+  margin:0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  /* фон для остальных страниц */
+  background: linear-gradient(180deg, #f7f2e8 0%, #ffffff 60%);
+  background-attachment: fixed;
+}
+
+body.home{
+  background: url("../img/bg_main.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+h1, h2, h3{
+  font-family: 'Playfair Display', Georgia, serif;
+  letter-spacing: 0.2px;
+}
+
+body.home::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background: rgba(255,255,255,0.18);
+  pointer-events:none;
+}
