@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Заказ альбома — The Beatles</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="nav">
+    <a href="index.html">Главная</a> |
+    <a href="Info.html">Общая информация</a> |
+    <a href="History.html">История</a> |
+    <a href="Disc.html">Дискография</a> |
+    <a href="Film.html">Фильмография</a> |
+    <b>Заказ альбома</b> |
+    <a href="Contacts.html">Контакты</a> |
+    <a href="Links.html">Источники</a>
+  </div>
+
+  <div class="wrapper">
+    <h1 align="center"><em>Форма заказа альбома</em></h1>
+
+    
+
+    <h2>Встроенная Google Форма</h2>
+    
+
+    <!-- ВСТАВЬ СЮДА СВОЙ iframe ИЗ GOOGLE FORMS -->
+    <div style="border-radius:12px; overflow:hidden; box-shadow:0 10px 25px rgba(0,0,0,0.18);">
+      <iframe
+        src="https://docs.google.com/forms/d/e/ВАШ_FORM_ID/viewform?embedded=true"
+        width="100%"
+        height="820"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0">Загрузка…</iframe>
+    </div>
+
+    <hr>
+
+    <h2>Запасной вариант (если форму ещё не создал)</h2>
+    <p class="small">Эта форма локальная и не отправляет данные в интернет — только для демонстрации разметки.</p>
+
+    <form>
+      <p>
+        <label>Имя:<br>
+          <input type="text" name="name" style="width:100%;padding:10px;border-radius:10px;border:1px solid #ccc;">
+        </label>
+      </p>
+      <p>
+        <label>Email:<br>
+          <input type="email" name="email" style="width:100%;padding:10px;border-radius:10px;border:1px solid #ccc;">
+        </label>
+      </p>
+      <p>
+        <label>Выберите альбом:<br>
+          <select name="album" style="width:100%;padding:10px;border-radius:10px;border:1px solid #ccc;">
+            <option>Please Please Me (1963)</option>
+            <option>With The Beatles (1963)</option>
+            <option>A Hard Day’s Night (1964)</option>
+            <option>Beatles for Sale (1964)</option>
+            <option>Help! (1965)</option>
+            <option>Rubber Soul (1965)</option>
+            <option>Revolver (1966)</option>
+            <option>Sgt. Pepper’s Lonely Hearts Club Band (1967)</option>
+            <option>Magical Mystery Tour (1967)</option>
+            <option>The Beatles / White Album (1968)</option>
+            <option>Yellow Submarine (1969)</option>
+            <option>Abbey Road (1969)</option>
+            <option>Let It Be (1970)</option>
+          </select>
+        </label>
+      </p>
+      <p>
+        <label>Комментарий:<br>
+          <textarea name="comment" rows="4" style="width:100%;padding:10px;border-radius:10px;border:1px solid #ccc;"></textarea>
+        </label>
+      </p>
+      <p>
+        <button type="button" style="padding:10px 16px;border-radius:12px;border:0;cursor:pointer;">
+          Отправить (демо)
+        </button>
+      </p>
+    </form>
+  </div>
+</body>
+</html>
